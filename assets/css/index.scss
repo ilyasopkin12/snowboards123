@@ -1,0 +1,137 @@
+
+@import '../fonts/_fonts.scss';
+:root {
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  --font-family: 'Grtsk Peta';
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+  
+  &__top {
+    @include caption-medium12-style();
+    padding: 15px 0;
+    background-color: var(--secondary-color);
+    
+    &-text {
+      color: var(--main-color);
+    }
+    
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 35px;
+    }
+    
+    &-right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    
+    &-location,
+    &-delivery,
+    &-payment,
+    &-return {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    &-nav {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+  }
+  
+  &__middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include body-1-16-medium-style();
+    background-color: var(--main-color);
+    padding: 22px 0;
+    max-width: 1680px;
+    margin: 0 auto;
+    
+    &-right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+  }
+.icon {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.right__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.choose__gender {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+}
+.header__bottom {
+  max-width: 1920px;
+  @include body-2-14-medium-style();
+  margin: 0 auto;
+  padding: 18px 0;
+  &-nav {
+    display: flex;
+    max-width: 1680px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 25px;
+  }
+  &-sale {
+    color: #FF0000;
+  }
+}
+.slider {
+  overflow: hidden;
+  &__container {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 1360px;
+    cursor: pointer;
+
+    &.active {
+      width: 1360px;
+    }
+  }
+}

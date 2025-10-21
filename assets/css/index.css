@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Grtsk Peta";
+  src: url("../fonts/GrtskPeta-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grtsk Peta";
+  src: url("../fonts/GrtskPeta-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grtsk Peta";
+  src: url("../fonts/GrtskPeta-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --main-color: #ffffff;
+  --secondary-color: #000000;
+  --font-family: "Grtsk Peta";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.header__top {
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  padding: 15px 0;
+  background-color: var(--secondary-color);
+}
+.header__top-text {
+  color: var(--main-color);
+}
+.header__top-left {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.header__top-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.header__item-location, .header__item-delivery, .header__item-payment, .header__item-return {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header__item-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.header__middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  background-color: var(--main-color);
+  padding: 22px 0;
+  max-width: 1680px;
+  margin: 0 auto;
+}
+.header__middle-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.header .icon {
+  display: flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+.header .right__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.header .choose__gender {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header__bottom {
+  max-width: 1920px;
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  margin: 0 auto;
+  padding: 18px 0;
+}
+.header__bottom-nav {
+  display: flex;
+  max-width: 1680px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 25px;
+}
+.header__bottom-sale {
+  color: #FF0000;
+}
+
+.slider {
+  overflow: hidden;
+}
+.slider__container {
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider__wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.slider__item {
+  width: 1360px;
+  cursor: pointer;
+}
+.slider__item.active {
+  width: 1360px;
+}/*# sourceMappingURL=index.css.map */
