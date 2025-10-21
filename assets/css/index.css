@@ -139,17 +139,17 @@
 }
 
 .slider {
+  max-width: 1920px;
+  margin: 0 auto;
   overflow: hidden;
 }
 .slider__container {
-  margin: 0 auto;
-  overflow: hidden;
+  position: relative;
 }
 .slider__wrapper {
   display: flex;
   gap: 20px;
   justify-content: center;
-  position: relative;
   overflow: hidden;
 }
 .slider__item {
@@ -157,5 +157,282 @@
   cursor: pointer;
 }
 .slider__item.active {
+  position: relative;
   width: 1360px;
+}
+.slider__item-sale {
+  font-family: "Grtska Peta";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: auto;
+}
+
+.paggination__button-left {
+  padding: 36px 13px 39px 9px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.paggination__button-left_arrowleft {
+  width: 10px;
+  height: 21px;
+}
+
+.paggination__button-right {
+  padding: 36px 13px 39px 9px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.paggination__button-right_arrowright {
+  width: 10px;
+  height: 21px;
+}
+
+.sale__wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 76px;
+  align-items: center;
+  padding: 15px 38px 17px 30px;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  max-width: 623px;
+  height: 90px;
+}
+
+.brands__slider {
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.brands__slider-item {
+  width: 61px;
+  height: 63px;
+}
+
+.action__wrapper {
+  max-width: 1360px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.action__wrapper-item {
+  display: flex;
+  flex-direction: column;
+}
+.action__wrapper-item-content {
+  max-height: 269px;
+}
+.action__wrapper-item-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 41px 24px 32px;
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+.new__products {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.new__products-container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.new__products-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Grtsk Peta";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  margin-bottom: 48px;
+}
+.new__products-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.text__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 5px;
+}
+.text__wrapper-brand {
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+  color: #000000;
+}
+.text__wrapper-description {
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+.text__wrapper-price {
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 10px;
+  letter-spacing: -0.2px;
+  color: #000000;
+}
+
+.image__wrapper {
+  position: relative;
+  padding: 50px 25px;
+}
+
+.favorite__active {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.discount__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 55px;
+  max-height: 25px;
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  background-color: #EB5757;
+  color: var(--main-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.showmore__button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.showmore__button {
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  padding: 10px 90px;
+}
+
+.dcshoes__wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.dcshoes__item-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dcshoes__item-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dclogo__image {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  width: 80px;
+}
+
+.popular {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.popular__title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 668px;
+  margin: 0 auto;
+  gap: 10px;
+}
+.popular__title-wrapper-title {
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 35px;
+  letter-spacing: -0.2px;
+  color: #000000;
+}
+.popular__title-wrapper-description {
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  color: #828282;
+  margin-bottom: 65px;
+}
+.popular__title-wrapper-title-dcshoes {
+  font-family: "Grtsk Peta";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  margin-bottom: 75px;
+}
+.popular .popular__container {
+  max-width: 1360px;
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */
