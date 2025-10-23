@@ -143,6 +143,17 @@
   align-items: center;
   gap: 25px;
 }
+.header__bottom-text {
+  font-family: "Grtsk Peta";
+  font-style: medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+  color: #000000;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 .header__bottom-sale {
   color: #FF0000;
 }
@@ -967,16 +978,16 @@
 }
 
 input[type=text],
-input[type=email],
-input[type=password],
+input[type=email] input[type=password],
 input[type=tel] {
   width: 100%;
   padding: 8px 10px;
-  font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 2px;
+  border-radius: 0;
+  font-size: 14px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  outline-offset: 2px;
 }
 
 label {

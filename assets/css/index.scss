@@ -116,6 +116,11 @@
     align-items: center;
     gap: 25px;
   }
+  &-text {
+    @include body-2-14-medium-style();
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
   &-sale {
     color: #FF0000;
   }
@@ -751,16 +756,17 @@
 }
 
 input[type='text'],
-input[type='email'],
+input[type='email']
 input[type='password'],
-input[type='tel'] {
+input[type="tel"] {
   width: 100%;
   padding: 8px 10px;
-  font-size: 14px;
   border: 1px solid #ccc;
-  border-radius: 2px;
+  border-radius: 0;
+  font-size: 14px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  outline-offset: 2px;
 }
 
 label {
