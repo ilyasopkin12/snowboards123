@@ -777,6 +777,10 @@
   height: 19px;
 }
 
+.categories {
+  display: none;
+}
+
 .footer {
   max-width: 1920px;
   margin: 0 auto;
@@ -1020,7 +1024,6 @@
   margin-bottom: 25px;
 }
 
-input[type=email],
 input[type=text],
 input[type=password],
 input[type=tel] {
@@ -1045,6 +1048,13 @@ label {
   color: #555;
   display: block;
   margin-bottom: 6px;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 .btn {
@@ -1129,7 +1139,18 @@ label {
           user-select: none;
 }
 
+.header__mobile {
+  display: none;
+}
+
+.brands__slider-mobile {
+  display: none;
+}
+
 @media (max-width: 375px) {
+  .header {
+    display: none;
+  }
   .header__mobile {
     display: flex;
     justify-content: space-between;
@@ -1197,6 +1218,9 @@ label {
     max-height: 40px;
     padding: 9px 20px;
   }
+  .brands__slider {
+    display: none;
+  }
   .slider__item-sale {
     font-family: "Grtsk Peta";
     font-style: medium;
@@ -1236,6 +1260,7 @@ label {
     flex-direction: column;
   }
   .categories {
+    display: block;
     margin-bottom: 29px;
   }
   .categories__title {
